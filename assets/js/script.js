@@ -35,7 +35,15 @@ function startQuiz() {
 }
 
 function displayNextQuestion() {
+    clearQuizArea();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
+}
+
+function clearQuizArea() {
+    nextButton.classList.add('hide');
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
 }
 
 function showQuestion(question) {
