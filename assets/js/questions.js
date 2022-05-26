@@ -27,7 +27,7 @@ const questions = [
         ]
     },
     {
-        question: 'Who developed the signal flares that are still used by the U.S. Navy?',
+        question: 'Who developed the signal flares that are still used today by the U.S. Navy?',
         answers: [
             { text: 'Esther Conwell', correct: false },
             { text: 'Beatrice Hicks', correct: false },
