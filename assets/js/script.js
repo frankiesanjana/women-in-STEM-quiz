@@ -35,7 +35,21 @@ function startQuiz() {
 }
 
 function displayNextQuestion() {
-    
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+}
+
+function showQuestion(question) {
+    questionElement.textContent = question.question;
+    question.answers.forEach(answer => {
+        const button = document.createElement('button');
+        button.classList.add('btn');
+        button.textContent = answer.text;
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('çlick', checkAnswer);
+        answerButtons.appendChild(button);
+    })
 }
 
 function checkAnswer() {
