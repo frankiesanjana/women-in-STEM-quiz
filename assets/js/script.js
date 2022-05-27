@@ -50,18 +50,17 @@ function showQuestion(question) {
     questionElement.textContent = question.question;
     question.answers.forEach(answer => {
         const button = document.createElement('button');
-        button.classList.add('btn');
         button.textContent = answer.text;
+        answerButtons.appendChild(button);
+        button.addEventListener('click', checkAnswer);
         if (answer.correct) {
             button.dataset.correct = answer.correct;
-        }
-        button.addEventListener('çlick', checkAnswer);
-        answerButtons.appendChild(button);
+        }      
     })
 }
 
-function checkAnswer() {
-    
+function checkAnswer(event) {
+    console.log("checked answer");
 }
 
 function incrementCorrect() {
