@@ -44,3 +44,13 @@ button {
 .hide {
     display: none;
 }
+
+/* answer feedback */
+
+.correct {
+    background-color: palegreen;
+}
+
+.incorrect {
+    background-color: lightcoral;
+}

@@ -61,6 +61,24 @@ function showQuestion(question) {
 
 function checkAnswer(event) {
     console.log("checked answer");
+    const selectedAnswer = event.target;
+    const correct = selectedAnswer.dataset.correct;
+    setFeedback(selectedAnswer, correct);
+    Array.from(answerButtons.children).forEach(button => {
+        setFeedback(button, button.dataset.correct);
+    })
+    nextButton.classList.remove('hide');
+}
+
+function setFeedback(element, correct) {
+    console.log("set feedback");
+    clearFeedback(element);
+    correct ? element.classList.add('correct') : element.classList.add('incorrect');
+}
+
+function clearFeedback(element) {
+    element.classList.remove('correct');
+    element.classList.remove('incorrect');
 }
 
 function incrementCorrect() {
