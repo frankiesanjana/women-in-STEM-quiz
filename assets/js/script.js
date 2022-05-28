@@ -37,6 +37,7 @@ function startQuiz() {
 function displayNextQuestion() {
     clearQuizArea();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
+    currentQuestionIndex++;
 }
 
 function clearQuizArea() {
@@ -67,7 +68,7 @@ function checkAnswer(event) {
     Array.from(answerButtons.children).forEach(button => {
         setFeedback(button, button.dataset.correct);
     })
-    nextButton.classList.remove('hide');
+    shuffledQuestions.length > currentQuestionIndex ? nextButton.classList.remove('hide') : endGame;
 }
 
 function setFeedback(element, correct) {
