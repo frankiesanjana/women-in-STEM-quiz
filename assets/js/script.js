@@ -56,7 +56,7 @@ function showQuestion(question) {
         button.addEventListener('click', checkAnswer);
         if (answer.correct) {
             button.dataset.correct = answer.correct;
-        }      
+        }
     })
 }
 
@@ -68,13 +68,15 @@ function checkAnswer(event) {
     Array.from(answerButtons.children).forEach(button => {
         setFeedback(button, button.dataset.correct);
     })
-    shuffledQuestions.length > currentQuestionIndex ? nextButton.classList.remove('hide') : endGame;
+    shuffledQuestions.length > currentQuestionIndex ? nextButton.classList.remove('hide') : endQuiz;
+    correct ? incrementCorrect() : incrementIncorrect();
 }
 
 function setFeedback(element, correct) {
     console.log("set feedback");
     clearFeedback(element);
     correct ? element.classList.add('correct') : element.classList.add('incorrect');
+    
 }
 
 function clearFeedback(element) {
@@ -82,12 +84,20 @@ function clearFeedback(element) {
     element.classList.remove('incorrect');
 }
 
+/**
+ * Takes the current score from the DOM and increments it by 1
+ */
 function incrementCorrect() {
-    
+    let previousScore = parseInt(document.getElementById('right').textContent);
+    document.getElementById('right').textContent = previousScore + 1;
 }
 
+/**
+ * Takes the current number of incorrect answers from the DOM and increments it by 1
+ */
 function incrementIncorrect() {
-    
+    let previousIncorrect = parseInt(document.getElementById('wrong').textContent);
+    document.getElementById('wrong').textContent = previousIncorrect + 1;
 }
 
 function endQuiz() {
