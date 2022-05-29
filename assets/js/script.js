@@ -2,10 +2,13 @@
 
 const startButton = document.getElementById("start-btn");
 const nextButton = document.getElementById("next-btn");
+const finishButton = document.getElementById("finish-btn");
+const restartButton = document.getElementById("restart-btn");
 const introText = document.getElementById("intro-text");
 const quizContainer = document.getElementById("quiz-container");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
+const quizFeedback = document.getElementById("quiz-feedback");
 
 // define variables to drive quiz
 
@@ -68,7 +71,7 @@ function checkAnswer(event) {
     Array.from(answerButtons.children).forEach(button => {
         setFeedback(button, button.dataset.correct);
     })
-    shuffledQuestions.length > currentQuestionIndex ? nextButton.classList.remove('hide') : endQuiz;
+    shuffledQuestions.length > currentQuestionIndex ? nextButton.classList.remove('hide') : endQuiz();
     correct ? incrementCorrect() : incrementIncorrect();
 }
 
@@ -101,5 +104,22 @@ function incrementIncorrect() {
 }
 
 function endQuiz() {
+    console.log('ending quiz');
+    finishButton.classList.remove('hide');
+    finishButton.addEventListener('click', showEndPage);
+}
 
+function showEndPage() {
+    quizContainer.classList.add('hide');
+    finishButton.classList.add('hide');
+    quizFeedback.classList.remove('hide');
+    restartButton.classList.remove('hide');
+    const finalScore = parseInt(document.getElementById('right').textContent);
+    if (finalScore > 7) {
+        document.getElementById('score-feedback').textContent = `Congratulations! You scored ${finalScore}. You're an expert!`;
+    } else if (finalScore > 4) {
+        document.getElementById('score-feedback').textContent = `Not bad! You scored ${finalScore}. You have a good level of knowledge!`;
+    } else {
+        document.getElementById('score-feedback').textContent = `You scored ${finalScore}. Want to learn more?`;
+    }
 }
