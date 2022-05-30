@@ -20,6 +20,7 @@ let currentIncorrect = 0;
 // event listeners
 
 startButton.addEventListener('click', startQuiz);
+restartButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', displayNextQuestion);
 
 // functions
@@ -31,6 +32,10 @@ nextButton.addEventListener('click', displayNextQuestion);
 function startQuiz() {
     startButton.classList.add('hide');
     introText.classList.add('hide');
+    quizFeedback.classList.add('hide');
+    restartButton.classList.add('hide');
+    document.getElementById('right').textContent = 0;
+    document.getElementById('wrong').textContent = 0;
     quizContainer.classList.remove('hide');
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
