@@ -125,6 +125,6 @@ function showEndPage() {
     } else if (finalScore > 4) {
         document.getElementById('score-feedback').textContent = `Not bad! You scored ${finalScore}. You have a good level of knowledge!`;
     } else {
-        document.getElementById('score-feedback').textContent = `You scored ${finalScore}. Want to learn more?`;
+        document.getElementById('score-feedback').textContent = `You scored ${finalScore}. Want to learn more about women in STEM?`;
     }
 }
