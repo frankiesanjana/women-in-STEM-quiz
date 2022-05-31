@@ -9,6 +9,11 @@ const quizContainer = document.getElementById("quiz-container");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const quizFeedback = document.getElementById("quiz-feedback");
+const extraInfo = document.getElementById("extra-info");
+const info = document.getElementById("info");
+const extraOne = document.getElementById("extra1");
+const extraTwo = document.getElementById("extra2");
+const extraThree = document.getElementById("extra3");
 
 // define variables to drive quiz
 
