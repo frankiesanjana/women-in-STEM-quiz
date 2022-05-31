@@ -31,6 +31,12 @@ h1 {
     height: 40px;
 }
 
+/* question and intro text styling */
+
+#question, #intro-text {
+    font-size: 120%;
+}
+
 /* button styling */
 
 button {

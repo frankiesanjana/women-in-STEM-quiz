@@ -75,7 +75,6 @@ function showQuestion(question) {
 }
 
 function checkAnswer(event) {
-    console.log("checked answer");
     const selectedAnswer = event.target;
     const correct = selectedAnswer.dataset.correct;
     setFeedback(selectedAnswer, correct);
@@ -96,7 +95,6 @@ function showExtraInfo(question) {
 }
 
 function setFeedback(element, correct) {
-    console.log("set feedback");
     clearFeedback(element);
     correct ? element.classList.add('correct') : element.classList.add('incorrect');
     
@@ -124,7 +122,6 @@ function incrementIncorrect() {
 }
 
 function endQuiz() {
-    console.log('ending quiz');
     finishButton.classList.remove('hide');
     finishButton.addEventListener('click', showEndPage);
 }
