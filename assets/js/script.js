@@ -84,7 +84,7 @@ function checkAnswer(event) {
     })
     shuffledQuestions.length > currentQuestionIndex ? nextButton.classList.remove('hide') : endQuiz();
     correct ? incrementCorrect() : incrementIncorrect();
-    showExtraInfo(question);
+    showExtraInfo(shuffledQuestions[currentQuestionIndex-1]);
 }
 
 function showExtraInfo(question) {
@@ -132,6 +132,7 @@ function endQuiz() {
 function showEndPage() {
     quizContainer.classList.add('hide');
     finishButton.classList.add('hide');
+    extraInfo.classList.add('hide');
     quizFeedback.classList.remove('hide');
     restartButton.classList.remove('hide');
     const finalScore = parseInt(document.getElementById('right').textContent);
