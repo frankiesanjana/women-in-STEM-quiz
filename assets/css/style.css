@@ -56,7 +56,7 @@ button {
     display: none;
 }
 
-/* answer feedback */
+/* answer feedback styling */
 
 .correct {
     background-color: palegreen;
@@ -69,3 +69,5 @@ button {
 .learn {
     margin: 10px auto;
 }
+
+/* further information styling */

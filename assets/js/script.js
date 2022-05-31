@@ -47,12 +47,18 @@ function startQuiz() {
     displayNextQuestion();
 }
 
+/**
+ * Removes the old content from the quiz area and selects the following question
+ */
 function displayNextQuestion() {
     clearQuizArea();
     showQuestion(shuffledQuestions[currentQuestionIndex]);
     currentQuestionIndex++;
 }
 
+/**
+ * Removes the Next button, extra information and old answer buttons from the quiz area
+ */
 function clearQuizArea() {
     nextButton.classList.add('hide');
     extraInfo.classList.add('hide');
@@ -61,6 +67,9 @@ function clearQuizArea() {
     }
 }
 
+/**
+ * Displays the next question and creates new answer buttons for it
+ */
 function showQuestion(question) {
     questionElement.textContent = question.question;
     question.answers.forEach(answer => {
@@ -74,6 +83,9 @@ function showQuestion(question) {
     })
 }
 
+/**
+ * Checks whether the selected answer is correct, chooses whether to increment the score or the number of incorrect answers and calls the function to display extra info about all possible answers
+ */
 function checkAnswer(event) {
     const selectedAnswer = event.target;
     const correct = selectedAnswer.dataset.correct;
@@ -86,6 +98,9 @@ function checkAnswer(event) {
     showExtraInfo(shuffledQuestions[currentQuestionIndex-1]);
 }
 
+/**
+ * Displays extra info about all possible answers
+ */
 function showExtraInfo(question) {
     extraInfo.classList.remove('hide');
     moreInfo.innerText = question.info;
@@ -94,12 +109,18 @@ function showExtraInfo(question) {
     extraThree.innerText = question.other3;
 }
 
+/**
+ * Adds the class of correct or incorrect to the answers to provide feedback
+ */
 function setFeedback(element, correct) {
     clearFeedback(element);
     correct ? element.classList.add('correct') : element.classList.add('incorrect');
     
 }
 
+/**
+ * Removes feedback colours so that the next question can be displayed
+ */
 function clearFeedback(element) {
     element.classList.remove('correct');
     element.classList.remove('incorrect');
@@ -121,11 +142,17 @@ function incrementIncorrect() {
     document.getElementById('wrong').textContent = previousIncorrect + 1;
 }
 
+/**
+ * Provides a link to the end page once the user has answered all quiz questions
+ */
 function endQuiz() {
     finishButton.classList.remove('hide');
     finishButton.addEventListener('click', showEndPage);
 }
 
+/**
+ * Displays quiz end page with user's final score and feedback
+ */
 function showEndPage() {
     quizContainer.classList.add('hide');
     finishButton.classList.add('hide');

@@ -8,11 +8,12 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- Heading, including page title and quiz logo -->
     <h1 class="heading">
         <img class="logo" src="assets/images/science-logo.png" alt="Logo showing double helix structure of DNA">
         Women in STEM quiz
     </h1>
-
+    <!-- Main section of the page, containing all quiz elements except for the score tracker -->
     <div id="quiz-area">
         <p id="intro-text">
         Welcome to the Women in STEM quiz! Test your knowledge and find out more...
@@ -20,10 +21,10 @@
         <div id="quiz-container" class="hide">
             <div id="question">Question</div>
             <div id="answer-buttons">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+                <button>Answer 1</button>
+                <button>Answer 2</button>
+                <button>Answer 3</button>
+                <button>Answer 4</button>
             </div>
         </div>
         <div id="extra-info" class="hide">
@@ -49,13 +50,13 @@
             <p>Or click the Restart button below to quiz again and improve your score!</p>
         </div>
         <div id="controls-container">
-            <button id="start-btn" class="btn">Start</button>
-            <button id="next-btn" class="btn hide">Next</button>
-            <button id="finish-btn" class="btn hide">Finish Quiz</button>
-            <button id="restart-btn" class="btn hide">Restart Quiz</button>
+            <button id="start-btn">Start</button>
+            <button id="next-btn" class="hide">Next</button>
+            <button id="finish-btn" class="hide">Finish Quiz</button>
+            <button id="restart-btn" class="hide">Restart Quiz</button>
         </div>
     </div>
-
+    <!-- Score tracker -->
     <div class="score-area">
         <p class="scores">Correct Answers <span id="right">0</span></p>
         <p class="scores">Incorrect Answers <span id="wrong">0</span></p>
