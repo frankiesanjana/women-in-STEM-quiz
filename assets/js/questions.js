@@ -59,7 +59,7 @@ const questions = [
             { text: 'Shakuntala Devi', correct: false },
             { text: 'Maria Gaetana Agnesi', correct: false }
         ],
-        info: 'Mariam Mirzakhani later went on to get a PhD at Harvard focused on Reiman surfaces, with implications for quantum physics.'
+        info: 'Mariam Mirzakhani later went on to get a PhD at Harvard focused on Reiman surfaces, with implications for quantum physics.',
         other1: 'Hypatia was a mathematician, astronomer, and philosopher who lived in Alexandria, Egypt. Born around 360 AD, she is the earliest female mathematician whose life and work is well known.',
         other2: 'Shakuntala Devi proved her exceptional talent in arithmetic through her math shows worldwide at a very young age. Her ability to multiply large numbers in her head has given her the nickname “Human-Computer.”',
         other3: 'Maria Gaetana Agnesi wrote one of the first calculus textbooks in 1748.'

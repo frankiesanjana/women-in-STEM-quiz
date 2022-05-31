@@ -10,7 +10,7 @@ const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const quizFeedback = document.getElementById("quiz-feedback");
 const extraInfo = document.getElementById("extra-info");
-const info = document.getElementById("info");
+const moreInfo = document.getElementById("more-info");
 const extraOne = document.getElementById("extra1");
 const extraTwo = document.getElementById("extra2");
 const extraThree = document.getElementById("extra3");
@@ -55,6 +55,7 @@ function displayNextQuestion() {
 
 function clearQuizArea() {
     nextButton.classList.add('hide');
+    extraInfo.classList.add('hide');
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
@@ -83,6 +84,15 @@ function checkAnswer(event) {
     })
     shuffledQuestions.length > currentQuestionIndex ? nextButton.classList.remove('hide') : endQuiz();
     correct ? incrementCorrect() : incrementIncorrect();
+    showExtraInfo(question);
+}
+
+function showExtraInfo(question) {
+    extraInfo.classList.remove('hide');
+    moreInfo.innerText = question.info;
+    extraOne.innerText = question.other1;
+    extraTwo.innerText = question.other2;
+    extraThree.innerText = question.other3;
 }
 
 function setFeedback(element, correct) {
