@@ -25,10 +25,15 @@ body {
 h1 {
     font-size: 350%;
     margin: 25px 0;
+    line-height: 120%;
 }
 
 .logo {
     height: 40px;
+}
+
+#quiz-area {
+    padding: 0 15px;
 }
 
 /* question and intro text styling */
@@ -59,4 +64,8 @@ button {
 
 .incorrect {
     background-color: lightcoral;
+}
+
+.learn {
+    margin: 10px auto;
 }
