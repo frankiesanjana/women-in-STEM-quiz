@@ -50,6 +50,7 @@ button {
     padding: 10px;
     display: block;
     margin: 10px auto;
+    color: black;
 }
 
 .hide {
@@ -72,3 +73,11 @@ button {
     margin: 10px auto;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-weight: 600;
+}
