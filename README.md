@@ -88,7 +88,7 @@ The website consists of a single page, with all content being loaded on this one
 
 ### Plane 4: Skeleton
 
-Wireframes for the project can be seen [here](assets/wireframes/wireframes.pdf). The wireframes are designed for mobile and the same design is then rolled out to tablet and desktop; there are no differences in the code on different screen sizes.
+Wireframes for the project can be seen [here](https://github.com/frankiesanjana/women-in-STEM-quiz/blob/main/wireframes.pdf). The wireframes are designed for mobile and the same design is then rolled out to tablet and desktop; there are no differences in the code on different screen sizes.
 
 There are a number of differences between the wireframes and the finished project, since the wireframes were designed before starting the build and some edits were made along the way. These are as follows:
 
