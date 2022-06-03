@@ -85,3 +85,18 @@ The website consists of a single page, with all content being loaded on this one
 - The questions page is also simple, with the title, question and answers and progress tracker displaying.
 - The feedback page loaded when a user clicks on a question is only slightly more complex; it adds user feedback and extra information, as well as displaying the 'Next' button so that the user can progress to the next question. This button is deliberately placed after the extra information so that the user is more likely to see and read the extra information.
 - The final page provides the user with their final score and some tailored feedback, links to further information, and a restart button so that they can repeat the quiz.
+
+### Plane 4: Skeleton
+
+Wireframes for the project can be seen [here](assets/wireframes/wireframes.pdf). The wireframes are designed for mobile and the same design is then rolled out to tablet and desktop; there are no differences in the code on different screen sizes.
+
+There are a number of differences between the wireframes and the finished project, since the wireframes were designed before starting the build and some edits were made along the way. These are as follows:
+
+- The logo that appears next to the page title in the wireframes was instead used in the favicon, with an alternative logo used for the title (see detail below in Surface section).
+- As mentioned above, the progress bar was not included in the final version since it was deemed to be a poor fit for the content.
+- The running total score was moved to the bottom of the screen so that it did not distract from the main content of the quiz, and the total number of incorrect answers was also added.
+- The information on correct answers was removed from the final page and added to each question page. This breaks down the content into smaller sections, making it easier for the user to read.
+- Further information about the incorrect answer options was also added. This enhances the educational aspect of the quiz by providing the user with much more information, some of which they may find more interesting, useful or relevant to their needs than the correct answer information.
+- The ordering of information on the final page has also been adjusted, with the aim that the user will read more of the information.
+
+### Plane 5: Surface
