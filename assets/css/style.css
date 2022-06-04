@@ -82,3 +82,21 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+/* media queries */
+
+/* small screen sizes up to 480 pixels */
+
+h1 {
+    font-size: 200%;
+    margin: 25px 0;
+    line-height: 120%;
+}
+
+.logo {
+    height: 24px;
+}
+
+body {
+    line-height: 180%;
+}

@@ -1,3 +1,13 @@
+/* This document was created with the help of the following YouTube tutorial: https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified
+
+In places I have borrowed code from this tutorial to input into the quiz game.
+
+However, wherever I was able to think of an alternative way to write code that would achieve the effect I wanted, I have done so.
+
+I have also added my own code to create extra functionality for the project.
+
+*/
+
 // define variables to select elements
 
 const startButton = document.getElementById("start-btn");
@@ -30,7 +40,6 @@ restartButton.addEventListener('click', startQuiz);
 nextButton.addEventListener('click', displayNextQuestion);
 
 // functions
-
 
 /**
  * hides the start button and intro text, displays the quiz. Adding a class of 'hide' to certain elements allows them to be targeted in the CSS to remove them from display
