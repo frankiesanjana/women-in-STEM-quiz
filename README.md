@@ -204,3 +204,78 @@ As detailed above in the Scope section, the following elements were considered b
 The website was also tested for accessibility using Lighthouse in Dev Tools, with the following results:
 
 <img src="assets/images/readme-images/lighthouse.png">
+
+### Bugs
+
+The following bugs were found during build and have been resolved:
+
+- During build, the `checkAnswer` function was not running when an answer box was clicked. To debug this, I added the code `console.log(“checked answer”);` to my `checkAnswer` function. I then temporarily removed the rest of the code in the checkAnswer function to see if this was preventing the code from running. The message still did not print to the console, so I added the code back and tried adjusting the code in the `showQuestion` function that calls the `checkAnswer` function by reordering the instructions. The message still did not print to the console, so I then removed all code from the checkAnswer function again other than the `console.log(“checked answer”);` code. The message then printed so the bug was caused by a combination of the ordering of instructions in the `showQuestion` function and a part of the `checkAnswer` function. I rewrote the `checkAnswer` function and it then worked so the bug inside the `checkAnswer` function was likely a simple typo.
+
+- Button text was displaying blue during testing on mobile (not on laptop where it correctly displayed as black), this was fixed simply by setting the button text colour to black in the `style.css` file.
+
+- The `showExtraInfo` function to display extra info about each option in the quiz when the user selects an answer was not working initially. I was getting an error message `undefined` where the text should be displayed. The div was being unhidden and rehidden correctly when the function was called, so this told me that the function was being called correctly.
+    - I tried moving where the function is called to within different functions and changing its parameters.
+    - I also tried inspecting the site in DevTools and looking for problems listed in GitPod.
+    - With some tutor help I realised that the question variable was accessing the question div element instead of the question object, since I was using `question` instead of `shuffledQuestions` when calling the `showExtraInfo` function. It was then simple to adjust this so that the function worked correctly.
+
+## Deployment
+
+The project was deployed to GitHub Pages. The steps taken to deploy are:
+- In the GitHub repository for the site, click on the ‘Settings’ tab along the top of the page.
+- This brings up a General Settings page with a selection of menu items down the left-hand side.
+- In this new menu, click on “Pages”.
+- In the main body of the page, it is then possible to select a branch. Select the main branch. Click on “Save”.
+- GitHub then provides a link to the published webpage, which can be clicked or copied and pasted like any other link.
+- Further updates that are pushed to the branch will automatically appear in GitHub Pages.
+
+### Forking a GitHub repository
+
+It is possible to copy the repository in order to experiment with your own changes without affecting the original project. The steps to do this as as follows:
+- Navigate to the GitHub website.
+- Log in if necessary.
+- Navigate to the repository that you want to fork.
+- In the top right-hand corner of the page, click on "fork".
+- You will be taken to a page to create your own fork. You can edit the project name and (optionally) add a description.
+- Click on "create fork" to complete the process.
+
+### Cloning a GitHub repository
+
+It is also possible to copy the repository onto your own local machine. In practice, this might be done to make it easier to fix merge conflicts, add or remove files, and push larger commits. To do this, follow these steps:
+- Navigate to the GitHub website.
+- Log in if necessary.
+- Navigate to the repository that you want to clone.
+- Above the list of files, find the "Code" button and click on it:
+<br>
+<img src="assets/images/readme-images/code-button.png">
+
+- To clone the repository using HTTPS, under "Clone with HTTPS", click the clipboard icon. To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click Use SSH, then click the clipboard icon. To clone a repository using GitHub CLI, click Use GitHub CLI, then click the clipboard icon.
+- Open your computer terminal.
+- Change the current working directory to the location where you want the cloned directory.
+- Type "git clone" and then paste the location that you have copied.
+- Press "enter" and your local clone will be created.
+
+## Credits
+
+### Content and Media
+
+- The quiz questions used for this project were taken from the [STEM For Her women in STEM quiz](https://stemforher.org/women-in-stem-quiz/).
+- The favicon images is from [Favicon](https://www.favicon.cc/).
+- The logo was designed using [Free Logo Design](https://www.freelogodesign.org/)
+
+### Code
+
+- The script.js file was created with the help of [this YouTube tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified) and in places I have borrowed code from this tutorial to input into the quiz game.
+    - However, wherever I was able to think of a way to write alternative code to achieve the effect I wanted, I have done so.
+    - I have also added my own code to create extra functionality for the project.
+- The code to import Google Fonts for use in all text in the website body is taken from [Google Fonts](https://fonts.google.com/).
+- I referred back to the Love Maths project on [Code Institute](https://codeinstitute.net/) while creating the project to ensure I was structuring my code correctly and to remind me of best practices.
+- I also made use of online resources [W3schools](https://www.w3schools.com/) and [Stack Overflow](https://stackoverflow.com/).
+
+### Other Credits
+
+- The Code Institude GitPod [template](https://github.com/Code-Institute-Org/gitpod-full-template) on GitHub was used to create my repository for this project.
+- Thanks to the Code Institute tutor support team, especially Oisin for helping me with the final bug described above.
+- [Balsamiq](https://balsamiq.com/) was used to develop wireframes for the project.
+- Thanks to Ed Stanley for feedback and suggestions for improvement.
+- Thank you to my mentor Dick Vlaanderen for code explanations and project guidance and review.
+- Thanks to my fellow students for support, advice and encouragement via Slack.
