@@ -42,7 +42,7 @@ User stories are focused around specific needs that visitors to a quiz site on t
 
 - As the site owner, I want to fulfil the needs and wishes of these users.
 - As the site owner, I want to provide clear and accurate information.
-- As the site owner, I want to provide an enjoyable experience for users.
+- As the site owner, I want to provide an enjoyable experience for users, where users can play through the quiz easily and intuitively.
 - As the site owner, I want users to be able to access the site from any size of device.
 - As the site owner, I want users to be inspired to learn more about women in STEM. As such, I want to provide some basic information, but also link out to external sources from which users can find out more.
 - As the site owner, I want users to enjoy the site and find it interesting enough that they think it is worth sharing with others.
@@ -150,6 +150,7 @@ When the user has chosen and selected an answer button, all answer buttons chang
 When the user has completed all ten questions, they are taken to a final page, which has a number of functions. Firstly, it provides some customised feedback to the user, where their final score is displayed along with some text that is adjusted based on their score. Secondly, they are provided with some external links to further information. Lastly, they are invited to restart the quiz in order to improve their score.
 
 <img src="assets/images/readme-images/end-page.jpg">
+<img src="assets/images/readme-images/links.png">
 <img src="assets/images/readme-images/restart-button.jpg">
 
 ### Potential Future Features
@@ -159,3 +160,47 @@ As detailed above in the Scope section, the following elements were considered b
 - A contact form for users to get in touch with the site owner and submit questions or request further information.
 - Highscore storage, a progress tracker during the quiz, sound feedback as the user selects answers and music that could be played during the quiz. I considered these features but ultimately felt that they were not a good fit for this type of content since they are more suited to games or competitive quizzes, whereas the aim of this quiz is to be more educational, and they could potentially distract users from the content that is the real focus of this project.
 - A larger question bank, which could also have functionality to allow it to be updated as more questions are developed.
+
+## Technologies Used
+
+### Languages
+
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+### Frameworks and Libraries
+
+- [Balsamiq](https://balsamiq.com/)
+- [GitHub](https://github.com/)
+- [GitPod](https://gitpod.io/)
+- [Chrome Dev Tools](https://developers.google.com/web/tools/chrome-devtools)
+- [Google Fonts](https://fonts.google.com/)
+- [Favicon](https://www.favicon.cc/)
+- [Free Logo Design](https://www.freelogodesign.org/)
+- [Amiresponsive](http://ami.responsivedesign.is/)
+
+## Testing
+
+- Testing during coding took place by refreshing the browser preview in Chrome and playing through the quiz, including using the restart button to check that the quiz reloaded properly, after each significant new section of code was written.
+
+### Manual Testing
+
+- External links have all been tested, to check that each link opens correctly and opens in a new browser.
+- Both correct and incorrect answers to all questions have been selected, to check that both function as intended.
+
+### Device and Cross-Browser Testing
+
+- The quiz has been tested by playing it through on a range of browsers and devices, including:
+    - Chrome, Firefox and Edge on a laptop (ASUS Vivobook Pro 14)
+    - Chrome and Safari on iPhones (iPhone 13 Pro and iPhone XS)
+
+### Validator Testing
+
+- [W3C HTML validator](https://validator.w3.org/)
+- [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
+- [JS Hint JavaScript validator](https://jshint.com/)
+
+The website was also tested for accessibility using Lighthouse in Dev Tools, with the following results:
+
+<img src="assets/images/readme-images/lighthouse.png">

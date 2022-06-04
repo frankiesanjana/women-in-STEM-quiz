@@ -44,7 +44,7 @@ function startQuiz() {
     document.getElementById('wrong').textContent = 0;
     quizContainer.classList.remove('hide');
     // in the shuffledQuestions variable, the Math.random function is used to return a number between 0 and 1, then 0.5 is subtracted (since this is the mean value) in order to produce an equal probability of a positive or negative value. For a positive value, the index of the chosen parameter in the new array will be higher than that of the following parameter; for a negative value the index of the following parameter will be higher.
-    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
     currentQuestionIndex = 0;
     displayNextQuestion();
 }
@@ -81,7 +81,7 @@ function showQuestion(question) {
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
-    })
+    });
 }
 
 /**
@@ -93,7 +93,7 @@ function checkAnswer(event) {
     setFeedback(selectedAnswer, correct);
     Array.from(answerButtons.children).forEach(button => {
         setFeedback(button, button.dataset.correct);
-    })
+    });
     // conditional (ternary) operator: if the length of the shuffledQuestions array is greater than the currentQuestionIndex (i.e., if there are unused questions remaining), then remove the 'hide' class from the Next button so that the button displays to the user; otherwise, run the endQuiz function
     shuffledQuestions.length > currentQuestionIndex ? nextButton.classList.remove('hide') : endQuiz();
     // conditional (ternary) operator: if the correct answer has been selected, run the incrementCorrect function; otherwise, run the incrementIncorrect function
