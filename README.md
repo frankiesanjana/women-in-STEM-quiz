@@ -1,7 +1,5 @@
 # Women in STEM Quiz
 
-------
-
 Women in STEM Quiz is a quiz site designed for users to test their level of knowledge about women in the fields of science,  technology, engineering and maths ("STEM"). The site aims to be entertaining but also educational, providing feedback and additional information on each answer as the user progresses through the quiz, and providing links at the end for users to find out more information should they so desire.
 
 The site has been created for the second milestone project for Code Institute's Diploma in Full Stack Software Development.
@@ -11,7 +9,6 @@ You can visit the live website [here](https://frankiesanjana.github.io/women-in-
 [ add amiresponsive pic ]
 
 ## Concept
-------
 
 Women are still significantly underrepresented in the science, technology, engineering and maths (“STEM”) workforce. [A study](https://www.pnas.org/doi/pdf/10.1073/pnas.1914221117) published by PNAS in 2020 compared gender inequality across 83 countries and found the following:
 - In scientific publications, there was an overall author gender ratio of 73% to 27%
@@ -51,7 +48,6 @@ User stories are focused around specific needs that visitors to a quiz site on t
 - As the site owner, I want users to enjoy the site and find it interesting enough that they think it is worth sharing with others.
 
 ## Design
-------
 
 The website was designed according to the five planes of content strategy. Using this structure provided a framework to develop the website. This is explained in more detail below.
 
@@ -100,3 +96,24 @@ There are a number of differences between the wireframes and the finished projec
 - The ordering of information on the final page has also been adjusted, with the aim that the user will read more of the information.
 
 ### Plane 5: Surface
+
+#### Colour Scheme
+
+The colour scheme is kept very simple, with black for text and white for background colour to maintain contrast. The colours selected to highlight correct and incorrect answers are pale green and light coral, respectively. These provide the same clear feedback as using the more obvious green and red, but are less intense and maintain a better contrast between the text and the background colour. This aims to have the impact of creating a more calming and visually pleasing user experience, and ensuring that the text remains easy to read.
+
+#### Typography
+
+The selected font of Poppins is designed to be clear and easy to read, and intended to be relatively neutral so that it does not take focus away from the content. The backup font used for cases where the chosen font is not accessible is sans-serif .
+
+#### Images
+
+Two images are used on the site. The first is the black-and-white logo used in the main heading, which depicts the double-helix structure of DNA. While the logo is again intended to blend in well visually with the rest of the site, it also reflects an often-underappreciated contribution to science made by a woman: Rosalind Franklin's crucial contributions to understanding the structure of DNA were largely unrecognised during her lifetime, and three men later received a Nobel Prize for its discovery.
+
+The second image used on the site is the favicon image. Unlike the rest of the site content, this is designed to be visually striking since this makes it easier to identify the tab containing the quiz if it is left open in a browser window for later use among many other open tabs. It is also a good way of adding a small amount of more eye-catching content to the site that does not detract from the content in any way.
+
+#### Presentation
+
+The website is designed to maintain consistency of look and feel. For example, the same font is used throughout; headings and text content are kept in the same structure throughout the quiz; and buttons are all styled similarly. The style of writing and tone is also intended to maintain a consistent feel, and user feedback is encouraging, with the emphasis on education and learning rather than a competitive focus to the quiz.
+
+## Features
+
