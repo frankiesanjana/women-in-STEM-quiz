@@ -117,3 +117,45 @@ The website is designed to maintain consistency of look and feel. For example, t
 
 ## Features
 
+### Current Features
+
+The website consists of a single page, where different features are shown and hidden according to what it is appropriate to display to the user at any given moment. This consists of a title, introductory section, quiz section where firstly questions and then correct answers and further information are displayed, and a final feedback, extra information and restart section at the end.
+
+#### Title
+
+The title is displayed on all pages.
+
+<img src="assets/images/readme-images/title.jpg">
+
+#### Start Page
+
+The start page welcomes the user to the quix and invites them to start playing. The correct / incorrect answer tracker is deliberately not hidden on the first screen; this is intended to help draw the user in by causing them to ask themselves how many questions they can answer correctly.
+
+<img src="assets/images/readme-images/start-page.jpg">
+
+#### Question Page
+
+When the user initiates the quiz by clicking "Start" from the introductory page, the main quiz section is loaded. A randomly selected quiz question is displayed, and the four corresponding answer buttons are displayed below the question.
+
+<img src="assets/images/readme-images/question-page.jpg">
+
+#### Question Feedback
+
+When the user has chosen and selected an answer button, all answer buttons change to either green or red, to indicate which answer is correct. Some extra text providing information about each of the four answers is also loaded below the question. In addition, the score tracker is adjusted to reflect either an extra correct or an extra incorrect answer.
+
+<img src="assets/images/readme-images/question-feedback.jpg">
+
+#### Final Page
+
+When the user has completed all ten questions, they are taken to a final page, which has a number of functions. Firstly, it provides some customised feedback to the user, where their final score is displayed along with some text that is adjusted based on their score. Secondly, they are provided with some external links to further information. Lastly, they are invited to restart the quiz in order to improve their score.
+
+<img src="assets/images/readme-images/end-page.jpg">
+<img src="assets/images/readme-images/restart-button.jpg">
+
+### Potential Future Features
+
+As detailed above in the Scope section, the following elements were considered but ultimately deemed to be out of scope of the current website. Some could be added to a future version:
+
+- A contact form for users to get in touch with the site owner and submit questions or request further information.
+- Highscore storage, a progress tracker during the quiz, sound feedback as the user selects answers and music that could be played during the quiz. I considered these features but ultimately felt that they were not a good fit for this type of content since they are more suited to games or competitive quizzes, whereas the aim of this quiz is to be more educational, and they could potentially distract users from the content that is the real focus of this project.
+- A larger question bank, which could also have functionality to allow it to be updated as more questions are developed.
