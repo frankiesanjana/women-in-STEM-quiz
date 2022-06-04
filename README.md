@@ -6,7 +6,7 @@ The site has been created for the second milestone project for Code Institute's 
 
 You can visit the live website [here](https://frankiesanjana.github.io/women-in-STEM-quiz/).
 
-[ add amiresponsive pic ]
+<img src="assets/images/readme-images/responsive.png">
 
 ## Concept
 
@@ -259,7 +259,7 @@ It is also possible to copy the repository onto your own local machine. In pract
 ### Content and Media
 
 - The quiz questions used for this project were taken from the [STEM For Her women in STEM quiz](https://stemforher.org/women-in-stem-quiz/).
-- The favicon images is from [Favicon](https://www.favicon.cc/).
+- The favicon image is from [Favicon](https://www.favicon.cc/).
 - The logo was designed using [Free Logo Design](https://www.freelogodesign.org/)
 
 ### Code
