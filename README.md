@@ -209,6 +209,10 @@ I had originally used the ternary operators because I found that they produced a
 
 <img src="assets/images/readme-images/lighthouse.png">
 
+- Since the colour change to the answer buttons is the main way that feedback is provided to the user when they select an answer, I also double checked manually using DevTools > Rendering > Emulate Vision Deficiencies that the colours are easy to differentiate for users with different types of colour vision deficiency. Although the original green and red can appear quite different for these users, it was always the case that the correct answer button stood out clearly from the answer buttons marked as incorrect. For example, users with protanopia might be expected to see a screen including answer feedback as follows:
+
+<img src="assets/images/readme-images/protanopia.png">
+
 ### Bugs
 
 The following bugs were found during build and have been resolved:
