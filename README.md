@@ -201,7 +201,11 @@ As detailed above in the Scope section, the following elements were considered b
 - [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
 - [JS Hint JavaScript validator](https://jshint.com/)
 
-The website was also tested for accessibility using Lighthouse in Dev Tools, with the following results:
+An interesting issue arose during the JavaScript validator testing. Where I had used ternary statements in the code (on lines 107, 109 and 130 of the script.js file) the validator gave the warning "Expected an assignment or function call and instead saw an expression.". This is because ternary statements are generally expected to be used for assignment, whereas my code uses them to add or remove element classes and / or to call functions. [Further reading on Stack Overflow](https://softwareengineering.stackexchange.com/questions/294556/should-the-ternary-operator-be-used-outside-of-assignment-statements) suggests that this point is debated, with non-assignment uses of ternary operators held by several contributors to be the better option in some cases in terms of avoiding errors and giving a cleaner appearance.
+
+I had originally used the ternary operators because I found that they produced a clearer output than using an `if` statement. They appear simple and easily understandable. Elsewhere in the code (lines 178-184 of the script.js file) I had used an `if` statement, since in that case I found that the more readable way to write the code. For this reason I have chosen to leave the code as originally written, but add this note to clarify.
+
+- The website was also tested for accessibility using Lighthouse in Dev Tools, with the following results:
 
 <img src="assets/images/readme-images/lighthouse.png">
 
@@ -276,6 +280,7 @@ It is also possible to copy the repository onto your own local machine. In pract
 - The Code Institude GitPod [template](https://github.com/Code-Institute-Org/gitpod-full-template) on GitHub was used to create my repository for this project.
 - Thanks to the Code Institute tutor support team, especially Oisin for helping me with the final bug described above.
 - [Balsamiq](https://balsamiq.com/) was used to develop wireframes for the project.
-- Thanks to Ed Stanley for feedback and suggestions for improvement.
+- Thank you to Dave Horrocks and Suzy Bennett for input on the issue with ternary operators in JavaScript.
+- Thanks to Ed Stanley for general feedback and suggestions for improvement.
 - Thank you to my mentor Dick Vlaanderen for code explanations and project guidance and review.
 - Thanks to my fellow students for support, advice and encouragement via Slack.
