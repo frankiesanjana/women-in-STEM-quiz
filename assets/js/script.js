@@ -2,8 +2,6 @@
 
 In places I have borrowed code from this tutorial to input into the quiz game.
 
-However, wherever I was able to think of an alternative way to write code that would achieve the effect I wanted, I have done so.
-
 I have also added my own code to create extra functionality for the project.
 
 */
@@ -59,7 +57,7 @@ function startQuiz() {
 }
 
 /**
- * removes the old content from the quiz area and selects the following question, then increments the current question index by 1
+ * removes the old content from the quiz area, selects the following question, then increments the current question index by 1
  */
 function displayNextQuestion() {
     clearQuizArea();
@@ -86,7 +84,9 @@ function showQuestion(question) {
         const button = document.createElement('button');
         button.textContent = answer.text;
         answerButtons.appendChild(button);
+        // adds an event listener to the buttons so that when a button is clicked, the checkAnswer function is called
         button.addEventListener('click', checkAnswer);
+        // marks the correct answer as correct in the HTML
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
@@ -132,7 +132,7 @@ function setFeedback(element, correct) {
 }
 
 /**
- * removes feedback colours so that the next question can be displayed
+ * removes feedback classes so that the next question can be displayed
  */
 function clearFeedback(element) {
     element.classList.remove('correct');

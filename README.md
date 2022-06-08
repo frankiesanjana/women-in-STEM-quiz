@@ -273,7 +273,6 @@ It is also possible to copy the repository onto your own local machine. In pract
 ### Code
 
 - The script.js file was created with the help of [this YouTube tutorial](https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified) and in places I have borrowed code from this tutorial to input into the quiz game.
-    - However, wherever I was able to think of a way to write alternative code to achieve the effect I wanted, I have done so.
     - I have also added my own code to create extra functionality for the project.
 - The code to import Google Fonts for use in all text in the website body is taken from [Google Fonts](https://fonts.google.com/).
 - I referred back to the Love Maths project on [Code Institute](https://codeinstitute.net/) while creating the project to ensure I was structuring my code correctly and to remind me of best practices.

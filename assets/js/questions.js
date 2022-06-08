@@ -59,7 +59,7 @@ const questions = [
             { text: 'Shakuntala Devi', correct: false },
             { text: 'Maria Gaetana Agnesi', correct: false }
         ],
-        info: 'Mariam Mirzakhani later went on to get a PhD at Harvard focused on Reiman surfaces, with implications for quantum physics.',
+        info: 'Mariam Mirzakhani later went on to get a PhD at Harvard focused on Riemann surfaces, with implications for quantum physics.',
         other1: 'Hypatia was a mathematician, astronomer, and philosopher who lived in Alexandria, Egypt. Born around 360 AD, she is the earliest female mathematician whose life and work is well known.',
         other2: 'Shakuntala Devi proved her exceptional talent in arithmetic through her math shows worldwide at a very young age. Her ability to multiply large numbers in her head has given her the nickname “Human-Computer.”',
         other3: 'Maria Gaetana Agnesi wrote one of the first calculus textbooks in 1748.'
@@ -73,7 +73,7 @@ const questions = [
             { text: 'Hedy Lamar', correct: true }
         ],
         info: 'Not only did Hedy Lamar invent signal hopping, but she was also a well-known film actress.',
-        other1: 'Hertha Ayrton was a British engineer who was awarded the Hughes medal for her work. She was also a suffragette.',
+        other1: 'Hertha Ayrton was a British engineer who was awarded the Hughes Medal for her work. She was also a suffragette.',
         other2: 'Emily Warren Roebling was an engineer who is famous for her contribution to the Brooklyn Bridge.',
         other3: 'Edith Clark was a pioneer in electrical engineering and the first female professor of electrical engineering in the US.'
     },
@@ -85,7 +85,7 @@ const questions = [
             { text: 'Adele Goldstine', correct: false },
             { text: 'Marsha Rhea Williams', correct: false }
         ],
-        info: 'Grace Hopper is an American computer scientist and US Navy rear admiral known for inventing the compiler in addition to her other contributions to computer science.',
+        info: 'Grace Hopper is an American computer scientist and US Navy Rear Admiral known for inventing the compiler in addition to her other contributions to computer science.',
         other1: 'Anita Borg was an American computer scientist who founded the Institute for Women and Technology, and the annual Grace Hopper Celebration of Women in Computing.',
         other2: 'Adele Goldstine was an American mathematician and computer programmer who wrote the manual for ENIAC, which was the first electronic digital computer.',
         other3: 'Marsha Rhea Williams is a professor and researcher and is known for being the first African-American woman to earn a Ph.D. in computer science.'
@@ -114,7 +114,7 @@ const questions = [
         info: 'Anne Wojcicki is the CEO of 23 and Me.',
         other1: 'Sheryl Sandberg is the COO of Facebook.',
         other2: 'Susan Wojcicki is the CEO of You Tube.',
-        other3: 'Jennifer Taubert is Worldwide Chairman of Pharmaceuticals for Johnson and Johnson.'
+        other3: 'Jennifer Taubert is Worldwide Chairman of Pharmaceuticals for Johnson & Johnson.'
     },
     {
         question: 'Who is the founder of Girls Who Code?',
@@ -127,6 +127,6 @@ const questions = [
         info: 'Reshma Saujani is the Founder and CEO of Girls Who Code, an international nonprofit organization working to close the gender gap in technology and change the image of what a computer programmer looks like and does.',
         other1: 'Rachel Carson was an American marine biologist, writer, and conservationist whose influential book Silent Spring (1962) and other writings are credited with advancing the global environmental movement.',
         other2: 'Elizabeth Feinler is an American information scientist. From 1972 until 1989 she was director of the Network Information Systems Center at the Stanford Research Institute.',
-        other3: 'Bozoma Saint John is an American businessperson and marketing executive who was the chief marketing officer (CMO) at Netflix'
+        other3: 'Bozoma Saint John is an American businessperson and marketing executive who was the chief marketing officer (CMO) at Netflix.'
     }
 ];
