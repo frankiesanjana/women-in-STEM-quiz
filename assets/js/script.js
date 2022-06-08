@@ -84,7 +84,6 @@ function showQuestion(question) {
         const button = document.createElement('button');
         button.textContent = answer.text;
         answerButtons.appendChild(button);
-        // adds an event listener to the buttons so that when a button is clicked, the checkAnswer function is called
         button.addEventListener('click', checkAnswer);
         // marks the correct answer as correct in the HTML
         if (answer.correct) {
