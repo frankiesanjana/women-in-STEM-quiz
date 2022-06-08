@@ -268,7 +268,7 @@ It is also possible to copy the repository onto your own local machine. In pract
 
 - The quiz questions used for this project were taken from the [STEM For Her women in STEM quiz](https://stemforher.org/women-in-stem-quiz/).
 - The favicon image is from [Favicon](https://www.favicon.cc/).
-- The logo was designed using [Free Logo Design](https://www.freelogodesign.org/)
+- The logo was designed using [Free Logo Design](https://www.freelogodesign.org/).
 
 ### Code
 
